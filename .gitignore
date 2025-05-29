@@ -1,52 +1,27 @@
-# Prerequisites
-*.d
+# CMake files
+CMakeCache.txt
+CMakeFiles/
+Makefile
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+# Build directory (generated files)
+build/
+managed_components/
 
-# Linker output
-*.ilk
-*.map
-*.exp
+# IDE specific files
+.vscode/
+.idea/
+.DS_Store
 
-# Precompiled Headers
-*.gch
-*.pch
+# Log files
+*.log
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+# ESP-IDF tools (ESP-IDF itself)
+esp-idf/
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+# Generated SDK config (config for environment)
+sdkconfig
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+# Local configuration files (for your environment)
+*.conf
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
