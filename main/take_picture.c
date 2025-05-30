@@ -46,8 +46,31 @@
 
 #include "esp_camera.h"
 
-#define BOARD_WROVER_KIT 1
+#define CAMERA_MODEL_XIAO_ESP32S3 1
+#ifdef CAMERA_MODEL_XIAO_ESP32S3
+  // pins for Seeed Studio Xiao ESP32-S3 Sense
+  // Taken from https://github.com/Seeed-Studio/SSCMA-Micro/blob/dev/porting/espressif/boards/seeed_xiao_esp32s3/board.h
+  #define CAM_PIN_PWDN    -1
+  #define CAM_PIN_RESET   -1
+  #define CAM_PIN_XCLK    10
+  #define CAM_PIN_SIOD    40
+  #define CAM_PIN_SIOC    39
 
+  #define CAM_PIN_D0      15
+  #define CAM_PIN_D1      17
+  #define CAM_PIN_D2      18
+  #define CAM_PIN_D3      16
+  #define CAM_PIN_D4      14
+  #define CAM_PIN_D5      12
+  #define CAM_PIN_D6      11
+  #define CAM_PIN_D7      48
+
+  #define CAM_PIN_VSYNC   38
+  #define CAM_PIN_HREF    47
+  #define CAM_PIN_PCLK    13
+
+  #define LED_0_PIN          21
+#endif
 // WROVER-KIT PIN Map
 #ifdef BOARD_WROVER_KIT
 
